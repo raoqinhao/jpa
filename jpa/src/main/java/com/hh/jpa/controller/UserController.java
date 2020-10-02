@@ -21,4 +21,9 @@ public class UserController {
         return uuserService.getUserByUUID();
     }
 
+    @RequestMapping(value = "/findShowNameUser", method = RequestMethod.GET)
+    @ResponseBody
+    public Uuser1 getShowNameUuser1() {
+        return uuserService.getUserByExample();
+    }
 }

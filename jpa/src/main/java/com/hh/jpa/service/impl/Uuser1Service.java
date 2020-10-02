@@ -22,7 +22,8 @@ public class Uuser1Service implements UuserService {
 
     @Override
     public Uuser1 getUserByExample() {
-        return null;
+        Uuser1 showNameUuser1 = uuser1Mapper.findByShowNameEquals("花梅");
+        return showNameUuser1;
     }
 
 
