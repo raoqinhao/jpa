@@ -26,5 +26,15 @@ public class Uuser1Service implements UuserService {
         return showNameUuser1;
     }
 
+    @Override
+    public Uuser1 getUserByQuery(String showName) {
+        return uuser1Mapper.findUuser1ByQuery(showName);
+    }
+
+    @Override
+    public Uuser1 getUserByParam(String showName) {
+        return uuser1Mapper.findUuser1ByQuery1(showName);
+    }
+
 
 }
